@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("/template/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.tc-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.tc-box{
+    width: 600px;
+    height: 400px;
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    border-radius: 45px;
+    margin: 20px;
+}
+
+.tc-title {
+    background-color: transparent;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tc-contents {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.celsius {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.kelvin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.fahrenheit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.tc-contents input {
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 26px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.tc-symbol {
+    height: 22px;
+}
+
+.tc-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.tc-button button {
+    border: none;
+    border-radius: 90px;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+}
+
+.tc-button button:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border: 2px solid black;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+@media only screen and (max-width:640px){
+    .tc-main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .tc-box{
+        width: 400px;
+        height: 400px;
+        background:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+        border-radius: 45px;
+    
+    }
+    .tc-contents input {
+        outline: none;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 26px;
+        width: 180px;
+        padding: 10px;
+        font-size: 16px;
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    }
+    .tc-title h1{
+        font-size: x-large;
+    }
+    .tc-contents {
+        background-color: transparent;
+        padding-top:25px;
+        padding-bottom: 25px;
+    }
+    .celsius {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    .kelvin {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    .fahrenheit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+}
